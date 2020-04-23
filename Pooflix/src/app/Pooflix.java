@@ -117,7 +117,7 @@ public class Pooflix {
         Websodio webi = new Websodio(25,"Episodio web","http://websodio.com");
         //webi.numero = 25;
         //webi.nombre = "Episodio web";
-        webi.duracionEnMinutos = 30;
+        webi.setDuracionEnMinutos(30);
         //webi.url = "http://websodio.com";
         tempoDd.episodios.add(webi);
     }
