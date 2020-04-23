@@ -62,17 +62,17 @@ public class Pooflix {
         serie1.temporadas.add(tempoDd);
 
         // Agrego episodios de la T1
-        Episodio epiDd = new Episodio();
-        epiDd.numero = 1;
-        epiDd.nombre = "En el ring";
+        Episodio epiDd = new Episodio(1,"En el ring");
+        //epiDd.numero = 1;
+        //epiDd.nombre = "En el ring";
         tempoDd.episodios.add(epiDd);
-        Episodio epiDd2 = new Episodio();
-        epiDd2.numero = 2;
-        epiDd2.nombre = "Enmascarado y ensangrentado";
+        Episodio epiDd2 = new Episodio(2,"Enmascarado y ensangrentado");
+        //epiDd2.numero = 2;
+        //epiDd2.nombre = "Enmascarado y ensangrentado";
         tempoDd.episodios.add(epiDd2);
-        Episodio epiDd3 = new Episodio();
-        epiDd3.numero = 3;
-        epiDd3.nombre = "Un conejo en una tormenta de nieve";
+        Episodio epiDd3 = new Episodio(3,"Un conejo en una tormenta de nieve");
+        //epiDd3.numero = 3;
+        //epiDd3.nombre = "Un conejo en una tormenta de nieve";
         tempoDd.episodios.add(epiDd3);
 
         // Agrego segunda temporada
@@ -81,17 +81,17 @@ public class Pooflix {
         serie1.temporadas.add(tempoDd2);
 
         // Agrego episodios de la T2
-        Episodio epiDd4 = new Episodio();
-        epiDd4.numero = 1;
-        epiDd4.nombre = "Bang";
+        Episodio epiDd4 = new Episodio(1,"Bang");
+        //epiDd4.numero = 1;
+        //epiDd4.nombre = "Bang";
         tempoDd2.episodios.add(epiDd4);
-        Episodio epiDd5 = new Episodio();
-        epiDd5.numero = 2;
-        epiDd5.nombre = "Perros en la pelea";
+        Episodio epiDd5 = new Episodio(2,"Perros en la pelea");
+        //epiDd5.numero = 2;
+        //epiDd5.nombre = "Perros en la pelea";
         tempoDd2.episodios.add(epiDd5);
-        Episodio epiDd6 = new Episodio();
-        epiDd6.numero = 3;
-        epiDd6.nombre = "El orgullo de Nueva York";
+        Episodio epiDd6 = new Episodio(3,"El orgullo de Nueva York");
+        //epiDd6.numero = 3;
+        //epiDd6.nombre = "El orgullo de Nueva York";
         tempoDd2.episodios.add(epiDd6);
 
         // Agrego tercera temporada
@@ -100,17 +100,17 @@ public class Pooflix {
         serie1.temporadas.add(tempoDd3);
 
         // Agrego episodios de la T3
-        Episodio epiDd7 = new Episodio();
-        epiDd7.numero = 1;
-        epiDd7.nombre = "Resurrección";
+        Episodio epiDd7 = new Episodio(1,"Resurrección");
+        //epiDd7.numero = 1;
+        //epiDd7.nombre = "Resurrección";
         tempoDd3.episodios.add(epiDd7);
-        Episodio epiDd8 = new Episodio();
-        epiDd8.numero = 2;
-        epiDd8.nombre = "Por favor";
+        Episodio epiDd8 = new Episodio(2,"Por favor");
+        //epiDd8.numero = 2;
+        //epiDd8.nombre = "Por favor";
         tempoDd3.episodios.add(epiDd8);
-        Episodio epiDd9 = new Episodio();
-        epiDd9.numero = 3;
-        epiDd9.nombre = "Dios da y Dios quita";
+        Episodio epiDd9 = new Episodio(3,"Dios da y Dios quita");
+        //epiDd9.numero = 3;
+        //epiDd9.nombre = "Dios da y Dios quita";
         tempoDd3.episodios.add(epiDd9);
 
         //Agregando websodio
@@ -174,17 +174,17 @@ public class Pooflix {
         serie2.temporadas.add(tempoJj);
 
         // Agrego episodios de la T1
-        Episodio epiJj = new Episodio();
-        epiJj.numero = 1;
-        epiJj.nombre = "Noche de chicas";
+        Episodio epiJj = new Episodio(1,"Noche de chicas");
+        //epiJj.numero = 1;
+        //epiJj.nombre = "Noche de chicas";
         tempoJj.episodios.add(epiJj);
-        Episodio epiJj2 = new Episodio();
-        epiJj2.numero = 2;
-        epiJj2.nombre = "Síndrome de aplastamiento";
+        Episodio epiJj2 = new Episodio(2,"Sindrome de aplastamiento");
+        //epiJj2.numero = 2;
+        //epiJj2.nombre = "Síndrome de aplastamiento";
         tempoJj.episodios.add(epiJj2);
-        Episodio epiJj3 = new Episodio();
-        epiJj3.numero = 3;
-        epiJj3.nombre = "El whisky ayuda";
+        Episodio epiJj3 = new Episodio(3,"El whisky ayuda");
+        //epiJj3.numero = 3;
+        //epiJj3.nombre = "El whisky ayuda";
         tempoJj.episodios.add(epiJj3);
 
         // Agrego T2
@@ -193,17 +193,17 @@ public class Pooflix {
         serie2.temporadas.add(tempoJj2);
 
         // Agrego episodios de la T2
-        Episodio epiJj4 = new Episodio();
-        epiJj4.numero = 1;
-        epiJj4.nombre = "Empezar por el principio";
+        Episodio epiJj4 = new Episodio(1,"Empezar por el principio");
+        //epiJj4.numero = 1;
+        //epiJj4.nombre = "Empezar por el principio";
         tempoJj2.episodios.add(epiJj4);
-        Episodio epiJj5 = new Episodio();
-        epiJj5.numero = 2;
-        epiJj5.nombre = "Accidente extraño";
+        Episodio epiJj5 = new Episodio(2,"Accidente extraño");
+        //epiJj5.numero = 2;
+        //epiJj5.nombre = "Accidente extraño";
         tempoJj2.episodios.add(epiJj5);
-        Episodio epiJj6 = new Episodio();
-        epiJj6.numero = 3;
-        epiJj6.nombre = "Única sobreviviente";
+        Episodio epiJj6 = new Episodio(3,"Única sobreviviente");
+        //epiJj6.numero = 3;
+        //epiJj6.nombre = "Única sobreviviente";
         tempoJj2.episodios.add(epiJj6);
     }
 

@@ -2,6 +2,11 @@ package app;
 
 public class Episodio {
 
+    public Episodio(int numero, String nombre){
+        this.numero = numero;
+        this.nombre = nombre;
+    }
+
     public int numero;
     public String nombre;
     public int duracionEnMinutos;
