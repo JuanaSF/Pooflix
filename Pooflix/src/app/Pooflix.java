@@ -114,11 +114,11 @@ public class Pooflix {
         tempoDd3.episodios.add(epiDd9);
 
         //Agregando websodio
-        Websodio webi = new Websodio();
-        webi.numero = 25;
-        webi.nombre = "Episodio web";
+        Websodio webi = new Websodio(25,"Episodio web","http://websodio.com");
+        //webi.numero = 25;
+        //webi.nombre = "Episodio web";
         webi.duracionEnMinutos = 30;
-        webi.url = "http://websodio.com";
+        //webi.url = "http://websodio.com";
         tempoDd.episodios.add(webi);
     }
 
