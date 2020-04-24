@@ -12,13 +12,13 @@ public class App {
 
         miPooflix.inicializarCatalogo();
 
-        Serie bb = miPooflix.buscarSerie("Daredevil");
+        Serie bb = miPooflix.buscarSerie("The big bang theory");
 
         Temporada laMejorTemporada = bb.getTemporada(1);
 
         Episodio elTop;
 
-        elTop = laMejorTemporada.getEpisodio(3);
+        elTop = laMejorTemporada.getEpisodio(1);
 
         elTop.reproducir();
 
