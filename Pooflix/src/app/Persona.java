@@ -1,6 +1,6 @@
 package app;
 
-public class Persona {
+public abstract class Persona {
 
     public Persona(String nombre, int edad){
         this.nombre = nombre;

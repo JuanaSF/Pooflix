@@ -12,7 +12,7 @@ public class App {
 
         miPooflix.inicializarCatalogo();
 
-        Serie bb = miPooflix.buscarSerie("The big bang theory");
+        Serie bb = miPooflix.buscarSerie("Daredevil");
 
         Temporada laMejorTemporada = bb.getTemporada(1);
 
@@ -48,6 +48,10 @@ public class App {
         else{
             System.out.println("No hay que hacer mas nada con un episodio");
         }
+
+        miPooflix.inicializarListaNominados();
+
+        miPooflix.reproducirTrailersDeNominacion();
 
     }
 }

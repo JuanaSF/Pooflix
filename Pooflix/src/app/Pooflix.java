@@ -7,6 +7,8 @@ public class Pooflix {
 
     private List<Pelicula> peliculas = new ArrayList<>();
     private List<Serie> series = new ArrayList<>();
+    public List<INominable> nominados = new ArrayList<>();
+
 
     public List<Pelicula> getPeliculas() {
         return this.peliculas;
@@ -28,6 +30,7 @@ public class Pooflix {
         this.inicializarDaredevil();
         this.inicializarJessicaJones();
         this.inicializarTbbt();
+        this.inicializarPelis();
     }
 
     public void inicializarDaredevil() {
@@ -41,17 +44,14 @@ public class Pooflix {
         // otros datos de la serie
         Clasificacion clasificacion16 = new Clasificacion();
         clasificacion16.setEdadMin(16);
-        clasificacion16.setDescripcion(
-                "Desnudez fuerte y explícita, escenas fuertes, alcohol y drogas, insultos, imágenes muy intensas y/o un poco de sangre.");
+        clasificacion16.setDescripcion("Desnudez fuerte y explícita, escenas fuertes, alcohol y drogas, insultos, imágenes muy intensas y/o un poco de sangre.");
         serie1.setClasificacion(clasificacion16);
         Genero genero1 = new Genero();
         genero1.setNombre("Drama, policiaco");
-        genero1.setDescripcion(
-                "Es un género de cine y televisión que generalmente se enfoca en las narrativas sobre la práctica legal y el sistema de justicia.");
+        genero1.setDescripcion("Es un género de cine y televisión que generalmente se enfoca en las narrativas sobre la práctica legal y el sistema de justicia.");
         serie1.setGenero(genero1);
         serie1.setAnio(2015);
-        serie1.setDescripcion(
-                "Matt Murdock, un abogado del barrio neoyorquino de Hell's Kitchen, que quedó ciego en un accidente que incrementó sus cuatro sentidos restantes y que lucha como un justiciero todas las noches contra el crimen bajo el sobrenombre de Daredevil");
+        serie1.setDescripcion("Matt Murdock, un abogado del barrio neoyorquino de Hell's Kitchen, que quedó ciego en un accidente que incrementó sus cuatro sentidos restantes y que lucha como un justiciero todas las noches contra el crimen bajo el sobrenombre de Daredevil");
         serie1.setCalificacion(8.01);
 
         Actor actorDd = new Actor("Charlie Cox", 37);
@@ -143,17 +143,14 @@ public class Pooflix {
         // otros datos de serie
         Clasificacion clasificacionJj = new Clasificacion();
         clasificacionJj.setEdadMin(16);
-        clasificacionJj.setDescripcion(
-                "Desnudez fuerte y explícita, escenas fuertes, alcohol y drogas, insultos, imágenes muy intensas y/o un poco de sangre.");
+        clasificacionJj.setDescripcion("Desnudez fuerte y explícita, escenas fuertes, alcohol y drogas, insultos, imágenes muy intensas y/o un poco de sangre.");
         serie2.setClasificacion(clasificacionJj);
         Genero genero2 = new Genero();
         genero2.setNombre("ficcion detectivezca");
-        genero2.setDescripcion(
-                "Un investigador (muy a menudo un detective, ya sea profesional o amateur, ya sea o no integrante de las fuerzas oficiales) investiga un determinado crimen, a menudo un asesinato.");
+        genero2.setDescripcion("Un investigador (muy a menudo un detective, ya sea profesional o amateur, ya sea o no integrante de las fuerzas oficiales) investiga un determinado crimen, a menudo un asesinato.");
         serie2.setGenero(genero2);
         serie2.setAnio(15);
-        serie2.setDescripcion(
-                "Jessica Jones es una mujer con superpoderes que tuvo una breve carrera como superheroína hasta un incidente en la que el villano Kilgrave hizo que matara a alguien. Después de ese incidente, se convirtió en una investigadora privada. Cuando Kilgrave reaparece, Jessica debe levantarse para detenerlo.");
+        serie2.setDescripcion("Jessica Jones es una mujer con superpoderes que tuvo una breve carrera como superheroína hasta un incidente en la que el villano Kilgrave hizo que matara a alguien. Después de ese incidente, se convirtió en una investigadora privada. Cuando Kilgrave reaparece, Jessica debe levantarse para detenerlo.");
         serie2.setCalificacion(8.0);
 
         Actor actorJj = new Actor("Krysten Ritter", 38);
@@ -222,14 +219,11 @@ public class Pooflix {
         serie3.setClasificacion(clasificacionTbbt);
         Genero genero3 = new Genero();
         genero3.setNombre("comedia de situación");
-        genero3.setDescripcion(
-                "es un tipo de serie cuyos episodios se desarrollan regularmente en los mismos lugares y con los mismos personajes, y donde se suelen incluir risas grabadas o en vivo");
+        genero3.setDescripcion("es un tipo de serie cuyos episodios se desarrollan regularmente en los mismos lugares y con los mismos personajes, y donde se suelen incluir risas grabadas o en vivo");
         serie3.setGenero(genero3);
         serie3.setAnio(2007);
-        serie3.setDescripcion(
-                "La serie comienza con la llegada de Penny, aspirante a actriz, al apartamento vecino del que comparten Sheldon y Leonard, dos físicos que trabajan en el Instituto Tecnológico de California (Caltech). Leonard se enamora desde el primer momento de Penny.");
+        serie3.setDescripcion("La serie comienza con la llegada de Penny, aspirante a actriz, al apartamento vecino del que comparten Sheldon y Leonard, dos físicos que trabajan en el Instituto Tecnológico de California (Caltech). Leonard se enamora desde el primer momento de Penny.");
         serie3.setCalificacion(9.5);
-
         Actor actorTbbt = new Actor("Jim Parsons", 47);
         serie3.getElenco().add(actorTbbt);
 
@@ -293,6 +287,26 @@ public class Pooflix {
         tempoTbbt4.getEpisodios().add(epiTbbt);
     }
 
+    public void inicializarPelis() {
+        Pelicula peli = new Pelicula();
+        peli.setNombre("The Shining");
+        Actor actor = new Actor("Jack", 35);
+
+        peli.getElenco().add(actor);
+
+        this.peliculas.add(peli);
+
+        peli = new Pelicula();
+        peli.setNombre("Deadpool");
+        actor = new Actor("Ryan",38);
+
+        peli.getElenco().add(actor);
+
+        this.peliculas.add(peli);
+
+    }
+
+
     public Serie buscarSerie(String titulo) {
         for (Serie s : this.series) {
             if (s.getNombre().equals(titulo))
@@ -300,5 +314,29 @@ public class Pooflix {
         }
         return null;
     }
+
+    public void inicializarListaNominados() {
+
+        for (Pelicula peli : this.peliculas) {
+            this.nominados.add(peli);
+            for (Actor actor : peli.getElenco())
+                this.nominados.add(actor);
+
+        }
+        for (Serie serie : this.series) {
+            for (Actor actor : serie.getElenco())
+                this.nominados.add(actor);
+
+        }
+    }
+
+    public void reproducirTrailersDeNominacion() {
+        for (INominable nominado : nominados) {
+            
+            nominado.reproducirTrailerNominacion();
+        }
+    }
+
+
 
 }
