@@ -3,6 +3,8 @@ package app;
 import java.util.ArrayList;
 import java.util.List;
 
+import app.personas.Actor;
+
 public class Pooflix {
 
     private List<Pelicula> peliculas = new ArrayList<>();
